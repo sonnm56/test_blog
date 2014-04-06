@@ -13,4 +13,4 @@ def secure_token
     token
   end
 end
-TestBlog::Application.config.session_store :cookie_store, key: '_test_blog_session'
+TestBlog::Application.config.session_store :cookie_store, key: secure_token
